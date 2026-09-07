@@ -110,7 +110,9 @@ The best-performing model was the fine-tuned EfficientNetB0.
 | Model | Test Accuracy | Test Loss | Parameters |
 |---|---:|---:|---:|
 | Custom CNN | 70.06% | 0.7326 | 110,405 |
+| MobileNetV2 Frozen | 87.19% | 0.3363 | 2,422,597 |
 | MobileNetV2 Fine-Tuned | 90.74% | 0.2643 | 2,422,597 |
+| EfficientNetB0 Frozen | 93.52% | 0.1867 | 4,214,184 |
 | EfficientNetB0 Fine-Tuned | **93.83%** | **0.1837** | 4,214,184 |
 
 ### Best Model
@@ -131,8 +133,7 @@ The best-performing model was the fine-tuned EfficientNetB0.
 | Sunflower | 96.23% | 92.73% | 94.44% |
 | Tulip | 93.20% | 93.20% | 93.20% |
 
-The main remaining classification difficulty was between **Rose and Tulip**, indicating fine-grained visual similarity between these classes.
-
+The primary remaining classification difficulty was observed between Rose and Tulip, with 13 combined misclassifications in the final EfficientNetB0 model. This suggests that fine-grained morphological similarities between these classes remain challenging for the classifier.
 ## ⚡ Computational Efficiency
 
 Inference measurements were performed on the experimental Colab GPU environment.
@@ -173,15 +174,17 @@ flower-species-classification/
 │
 ├── README.md
 ├── .gitignore
+├── requirements.txt
 │
-├── flower_classification (1).ipynb
+├── notebooks/
+│   └── flower_classification.ipynb
 │
 ├── results/
 │   ├── flower_model_results.csv
-│   ├── mobilenetv2_finetuned_classification_report.csv
-│   ├── confusion_matrix.png
-│   └── efficientnetb0_gradcam_4_cases.png
+│   └── efficientnetb0_finetuned_classification_report.csv
 │
 └── figures/
-    ├── methodology.png
-    └── training_curves.png
+    ├── efficientnetb0_confusion_matrix.png
+    ├── efficientnetb0_gradcam_4_cases.png
+    ├── efficientnetb0_training_accuracy.png
+    └── efficientnetb0_validation_loss.png
