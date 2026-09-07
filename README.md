@@ -189,7 +189,7 @@ flower-species-classification/
     ├── efficientnetb0_training_accuracy.png
     └── efficientnetb0_validation_loss.png
 
-**## 🛠️ Technologies**
+## 🛠️ Technologies**
 
 - Python
 - TensorFlow 2.20
