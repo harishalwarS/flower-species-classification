@@ -189,83 +189,75 @@ flower-species-classification/
     ├── efficientnetb0_training_accuracy.png
     └── efficientnetb0_validation_loss.png
 
-## 🛠️ Technologies**
 
-- Python
-- TensorFlow 2.20
-- NumPy
-- Pandas
-- Matplotlib
-- Scikit-learn
-- Pillow
-- ImageHash
-- Google Colab
-- GitHub
+🛠️ Technologies
+Python
+TensorFlow 2.20
+NumPy
+Pandas
+Matplotlib
+Scikit-learn
+Pillow
+ImageHash
+Google Colab
+GitHub
+🔁 Reproducibility
 
-## 🔁 Reproducibility
-
-The experiments were conducted using a fixed dataset split and a random seed of `42`.
+The experiments were conducted using a fixed dataset split and a random seed of 42.
 
 The final cleaned dataset contains 4,298 images and was divided into:
 
-- Training: 3,007 images
-- Validation: 643 images
-- Test: 648 images
+Training: 3,007 images
+Validation: 643 images
+Test: 648 images
 
 All models were trained using the same train-validation-test partition to ensure a controlled comparison.
 
 The repository provides the main experimental notebook, model comparison results, classification metrics, confusion matrix, training curves, and Grad-CAM visualizations.
 
-## ⚠️ Limitations
-
-- The dataset contains only five flower classes and may not represent the full diversity of real-world flower species.
-- The dataset size and visual diversity are limited compared with large-scale image datasets.
-- The reported inference latency is specific to the experimental hardware environment.
-- Grad-CAM provides qualitative visual explanations and does not establish causal relationships between image regions and predictions.
-- External validation on an independent flower dataset was not performed.
-- Statistical evaluation across multiple independent training runs was not included.
-
-## 🚀 Future Work
+⚠️ Limitations
+The dataset contains only five flower classes and may not represent the full diversity of real-world flower species.
+The dataset size and visual diversity are limited compared with large-scale image datasets.
+The reported inference latency is specific to the experimental hardware environment.
+Grad-CAM provides qualitative visual explanations and does not establish causal relationships between image regions and predictions.
+External validation on an independent flower dataset was not performed.
+Statistical evaluation across multiple independent training runs was not included.
+🚀 Future Work
 
 Future extensions of this work may include:
 
-- Evaluation on larger and more diverse flower datasets
-- External validation using independent datasets
-- Inclusion of additional flower species
-- Quantitative evaluation of explainability methods
-- Robustness testing under different backgrounds and lighting conditions
-- Model compression and quantization for edge deployment
-- Comparison with additional lightweight architectures
-- Multiple training runs for statistical significance analysis
-- Investigation of fine-grained feature extraction and attention mechanisms
-
-## 🔬 Research Focus
+Evaluation on larger and more diverse flower datasets
+External validation using independent datasets
+Inclusion of additional flower species
+Quantitative evaluation of explainability methods
+Robustness testing under different backgrounds and lighting conditions
+Model compression and quantization for edge deployment
+Comparison with additional lightweight architectures
+Multiple training runs for statistical significance analysis
+Investigation of fine-grained feature extraction and attention mechanisms
+🔬 Research Focus
 
 This project focuses on the combined evaluation of:
 
-1. Classification performance
-2. Transfer learning effectiveness
-3. Computational efficiency
-4. Model explainability
+Classification performance
+Transfer learning effectiveness
+Computational efficiency
+Model explainability
 
 Rather than evaluating models only by accuracy, the study considers predictive performance, computational requirements, and visual explanations together.
 
-## 📌 Project Status
+📌 Project Status
 
-**Status:** Experimental study completed.
+Status: Experimental study completed.
 
-The current best-performing model is the fine-tuned EfficientNetB0, achieving **93.83% test accuracy** and **93.86% weighted F1-score** on the cleaned five-class flower dataset.
+The current best-performing model is the fine-tuned EfficientNetB0, achieving 93.83% test accuracy and 93.86% weighted F1-score on the cleaned five-class flower dataset.
 
-## 📚 References
+📚 References
+Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., & Chen, L. C. (2018). MobileNetV2: Inverted Residuals and Linear Bottlenecks. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 4510–4520.
+Tan, M., & Le, Q. V. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. Proceedings of the 36th International Conference on Machine Learning (ICML), 6105–6114.
+Selvaraju, R. R., Cogswell, M., Das, A., et al. (2017). Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization. Proceedings of the IEEE International Conference on Computer Vision (ICCV), 618–626.
+👤 Author
 
-1. Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., & Chen, L. C. (2018). MobileNetV2: Inverted Residuals and Linear Bottlenecks. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 4510–4520.
-
-2. Tan, M., & Le, Q. V. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. *Proceedings of the 36th International Conference on Machine Learning (ICML)*, 6105–6114.
-
-3. Selvaraju, R. R., Cogswell, M., Das, A., et al. (2017). Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization. *Proceedings of the IEEE International Conference on Computer Vision (ICCV)*, 618–626.
-
-## 👤 Author
-
-**Harish Alwar S**
+Harish Alwar S
 
 This repository contains the experimental implementation and analysis associated with the flower species classification study.
