@@ -1,0 +1,6 @@
+Model,Test_Accuracy,Test_Loss,Total_Parameters,Trainable_Parameters,Test_Accuracy_Percent
+Baseline CNN,0.700617,0.7326,110405,110405,70.0617
+MobileNetV2 Frozen,0.871914,0.3363,2422597,164613,87.1914
+MobileNetV2 Fine-Tuned,0.907407,0.2643,2422597,1691013,90.7407
+EfficientNetB0 Frozen,0.935185,0.1867,4214184,164613,93.5185
+EfficientNetB0 Fine-Tuned,0.938272,0.1837,4214184,1660773,93.8272
