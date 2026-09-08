@@ -257,14 +257,6 @@ Rather than evaluating models only by accuracy, the study considers predictive p
 
 The current best-performing model is the fine-tuned EfficientNetB0, achieving **93.83% test accuracy** and **93.86% weighted F1-score** on the cleaned five-class flower dataset.
 
-## 📚 References
-
-1. Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., & Chen, L. C. (2018). MobileNetV2: Inverted Residuals and Linear Bottlenecks. *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, 4510–4520.
-
-2. Tan, M., & Le, Q. V. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. *Proceedings of the 36th International Conference on Machine Learning (ICML)*, 6105–6114.
-
-3. Selvaraju, R. R., Cogswell, M., Das, A., et al. (2017). Grad-CAM: Visual Explanations from Deep Networks via Gradient-Based Localization. *Proceedings of the IEEE International Conference on Computer Vision (ICCV)*, 618–626.
-
 ## 👤 Author
 
 **Harish Alwar S**
